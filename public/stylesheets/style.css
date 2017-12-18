@@ -1,0 +1,106 @@
+#bodyid {
+	font : 16px "Poppins" , sans-serif;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	z-index: 0;
+    background: linear-gradient(rgba(333,333,333,.5), rgba(0,0,0,.5))
+
+}
+
+a {
+  	color: #00B7FF;
+}
+
+.loginpad {
+	padding-top: 20%;
+}
+/* ----------------------Navigation bar ----------------------*/
+
+.loginbutton {
+	display: inline-block; 
+	float: right;
+}
+
+/* -----------------------Crypto css -------------------------*/
+
+.graph {
+    width: 70%;
+    height: 500px;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/* -----------------------General ----------------------------*/
+.cryptolinks {
+	color: white;
+}
+
+.topbottompadding {
+	padding-top: 3em; 
+	padding-bottom: 3em;
+}
+
+.bottompadding {
+	padding-bottom: 3em;
+}
+.textcenter {
+	text-align: center;
+}
+
+
+
+.blue-background {
+	background-color: rgba(13, 14, 76, 1);
+}
+
+.black-background {
+	background-color: black;
+}
+
+.white-text {
+	color: white;
+}
+
+.orange-text {
+	color: #ffc175
+}
+
+.padding-bottom {
+	padding-bottom: 30px;
+}
+
+#brand:hover {
+	color: #ffc175
+}
+
+/* ------------------------MENU --------------------------*/
+.menu-button {
+	height: 200px;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: #474747;
+	overflow: hidden;
+	background-size: contain;
+	font-size: 24px;
+}
+.menu-button:hover {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 20px rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+}
+
+#home-navbar {
+	white-space: nowrap;
+	border-radius: 0px;
+	margin-bottom: 25px;
+	border-bottom: 1px solid white;
+}
+#home-navbar li {
+	display: inline-block;
+}
+#home-navbar li a {
+
+}

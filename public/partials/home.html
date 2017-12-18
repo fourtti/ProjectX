@@ -1,0 +1,60 @@
+<nav class="navbar black-background white-text" id="home-navbar">
+  <div class="container-fluid">
+    <div class="navbar-header" style="display: inline-block;">
+      <a id="brand" class="navbar-brand orange-text" href="/#home">ProjectX</a>
+    </div>
+    <div class="loginbutton">
+      <ul class="nav navbar-nav navbar-right black-background white-text">
+        <li ng-hide="!userIsLoggedIn"><a href="/#home" class="orange-text"><span class="glyphicon glyphicon-user"></span> username {{user.name}}</a>
+        </li>
+        <li ng-hide="userIsLoggedIn" ><a href="/#register/" class="orange-text"><span class="glyphicon glyphicon-log-in"></span>&nbsp; Sign Up</a>
+        </li>
+        <li ng-hide="userIsLoggedIn" ><a href="/#login/" class="orange-text"><span class="glyphicon glyphicon-log-in"></span>&nbsp; Log in</a>
+        </li>
+        <li ng-hide="!userIsLoggedIn" ><a href ng-click="userLogOut()" class="orange-text"><span class="glyphicon glyphicon-log-out"></span>&nbsp; Log out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div ng-hide="!userIsLoggedIn" class="textcenter topbottompadding white-text">
+  <button ng-click="goOnline()" style="padding: 10px; color: black">go back to online selection of graphs</button>
+</div>
+<div ng-hide="userIsLoggedIn">
+  <div>
+    <h3 class="topbottompadding text-center">This site is for observing some cryptocurrencies values</h3>
+
+  </div>
+  <div>
+    <h3 class="bottompadding text-center">>Some sneakpeaks from logged in view</h3>
+  </div>
+
+
+    <div class="container menu-buttons-container">
+      <div class="row text-center menu-row">
+
+       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center padding-bottom">
+        <a type="button" class="menu-button col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" id="" style="color: orange; background-image: url('images/bitcoin.png'); padding-top: 50px;">
+          >
+        Bitcoin</a>
+      </div>
+
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center padding-bottom">
+        <a type="button" class="menu-button col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" 
+         id="" style="color: orange; background-image: url('images/neo.png'); padding-top: 50px;">
+        <!--<div style="font-size: 60px; position: absolute"></div>-->
+        >
+      Neo</a>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center padding-bottom">
+      <a type="button" class="menu-button col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" id="" style="color: orange; background-image: url('images/ethereum.png'); padding-top: 50px;">
+        <div ></div>
+        >
+      Ethereum</a>
+    </div>
+
+    </div>
+  </div>
+</div>

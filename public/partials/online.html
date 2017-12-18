@@ -1,0 +1,50 @@
+<nav class="navbar black-background white-text" id="home-navbar">
+  <div class="container-fluid">
+    <div class="navbar-header" style="display: inline-block;">
+      <a id="brand" class="navbar-brand orange-text" href="/#home">ProjectX</a>
+    </div>
+    <div class="loginbutton">
+      <ul class="nav navbar-nav navbar-right black-background white-text">
+        <li><a href="/#home" class="orange-text"><span class="glyphicon glyphicon-user"></span> username {{user.name}}</a>
+        </li>
+        <li ng-hide="!userIsLoggedIn" ><a href="/#login/" class="orange-text"><span class="glyphicon glyphicon-log-in"></span>&nbsp; Log in</a>
+        </li>
+        <li ng-hide="userIsLoggedIn" ><a href ng-click="userLogOut()" class="orange-text"><span class="glyphicon glyphicon-log-out"></span>&nbsp; Log out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+	<div class="container menu-buttons-container">
+	  <div class="row text-center menu-row topbottompadding">
+
+	  	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center padding-bottom">
+	  		<a type="button" class="menu-button col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center cryptolinks" 
+	  		href="/#bitcoin/" id="my-maps-button">
+	  		
+	      >
+	  		Bitcoin</a>
+	  	</div>
+
+	  	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center padding-bottom">
+	  		<a type="button" class="menu-button col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center cryptolinks" 
+	  		href="/#neo/" style="color: white;">
+	  		<!--<div style="font-size: 60px; position: absolute"></div>-->
+	      >
+	  		Neo</a>
+	  	</div>
+
+	  	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center padding-bottom">
+	  		<a type="button" class="menu-button col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center cryptolinks" 
+	  		href="/#ethereum/" id="online-maps-button">
+	  		<div ></div>
+	      >
+	  		Ethereum</a>
+	  	</div>
+
+	  </div>
+	</div>
+</div>
+

@@ -1,0 +1,35 @@
+
+<nav class="navbar black-background white-text" id="home-navbar">
+  <div class="container-fluid">
+    <div class="navbar-header" style="display: inline-block;">
+      <a id="brand" class="navbar-brand orange-text" href="/#home">ProjectX</a>
+    </div>
+    <div class="loginbutton">
+      <ul class="nav navbar-nav navbar-right black-background white-text">
+        <li><a href="/#home" class="orange-text"><span class="glyphicon glyphicon-user"></span> username {{user.name}}</a>
+        </li>
+        <li ng-hide="!userIsLoggedIn" ><a href="/#login/" class="orange-text"><span class="glyphicon glyphicon-log-in"></span>&nbsp; Log in</a>
+        </li>
+        <li ng-hide="userIsLoggedIn" ><a href ng-click="userLogOut()" class="orange-text"><span class="glyphicon glyphicon-log-out"></span>&nbsp; Log out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <br>
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="form-group" >   
+          <label class="white-text">Price now</label>
+          <p>{{price}}</p>
+      </div>
+
+    </div>
+        <div id="chartContainer" class="graph col-sm-10"></div>
+    </div>
+    <p class="text-center">Thank you etherchain for the API</p>
+</div>
+
+
